@@ -1,0 +1,34 @@
+@import "../common-styles/colors.css";
+@import "../common-styles/fonts.css";
+@import "../Avatar/avatar.css";
+
+.badge {
+  position: relative;
+}
+
+.status {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.2rem;
+}
+.number {
+  background: var(--success-color);
+  width:1.5rem;
+  height: 1.5rem;
+  top:-0.5rem;
+  right:-0.5rem;
+  color: var(--white-color);
+}
+.online {
+  background-color: var(--success-color);
+}
+.busy {
+  background-color: var(--danger-color);
+}
+
+span.icon {
+  font-size: 3rem;
+}
