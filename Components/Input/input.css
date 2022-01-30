@@ -1,0 +1,22 @@
+@import "../common-styles/colors.css";
+@import "../common-styles/common.css";
+@import "../common-styles/fonts.css";
+
+.input {
+  display: block;
+  border: 1.5px solid var(--black-color);
+  border-radius: 3px;
+  height: 2rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+.input:focus {
+  outline: none;
+  border: 1.5px solid var(--info-color);
+}
+.incorrect-password {
+  border: 1.5px solid var(--danger-color);
+}
+.incorrect {
+  color: var(--danger-color);
+}

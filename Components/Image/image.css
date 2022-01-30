@@ -1,0 +1,13 @@
+@import "../common-styles/common.css";
+
+.img {
+  object-fit: cover;
+}
+.responsive-img {
+  max-width: 100%;
+}
+.rounded-img {
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 50%;
+}
