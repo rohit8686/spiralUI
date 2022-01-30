@@ -29,6 +29,6 @@
   background-color: var(--danger-color);
 }
 
-span.icon {
+.span.icon {
   font-size: 3rem;
 }
