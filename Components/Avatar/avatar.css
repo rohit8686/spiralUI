@@ -1,0 +1,24 @@
+@import "../common-styles/common.css";
+@import "../common-styles/fonts.css";
+
+.avatar {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+.sm {
+  width: var(--sm);
+  height: var(--sm);
+}
+.md {
+  width: var(--md);
+  height: var(--md);
+}
+.lg {
+  width: var(--lg);
+  height: var(--lg);
+}
+.square{
+    border-radius: 4px;
+}

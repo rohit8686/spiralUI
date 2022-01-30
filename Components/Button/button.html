@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="button.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <title>Button</title>
+  </head>
+  <body>
+    <!-- Button -->
+    <div class="container flex">
+      <button class="btn btn-default">Default</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-error">Error</button>
+    </div>
+
+    <!-- Link -->
+    <div class="container flex">
+      <button class="btn btn-default"><a class="a" href="">Link</a></button>
+    </div>
+
+    <!-- Icon Button -->
+    <div class="container flex">
+      <button class="btn btn-primary flex">
+        <span class="material-icons-outlined"> email </span>
+        <p>Email</p>
+      </button>
+      <button class="btn btn-error flex">
+        <span class="material-icons-outlined"> error </span>
+        <p>Error</p>
+      </button>
+      <button class="btn btn-success flex">
+        <span class="material-icons-outlined"> check_circle </span>
+        <p>Success</p>
+      </button>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div class="container flex">
+      <span class="material-icons-outlined float-btn arrow-upward">
+        arrow_upward
+      </span>
+      <span class="material-icons-outlined float-btn edit"> edit</span>
+    </div>
+  </body>
+</html>
