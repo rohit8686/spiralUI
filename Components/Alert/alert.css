@@ -1,0 +1,20 @@
+@import "../common-styles/colors.css";
+@import "../common-styles/fonts.css";
+@import "../common-styles/common.css";
+
+.info {
+  background-color: var(--info-color);
+  color: var(--white-color);
+}
+.danger {
+  background-color: var(--danger-color);
+  color: var(--white-color);
+}
+.success {
+  background-color: var(--success-color);
+  color: var(--white-color);
+}
+.warning {
+  background-color: var(--warning-color);
+  color: var(--white-color);
+}
