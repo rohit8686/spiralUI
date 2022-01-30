@@ -1,0 +1,39 @@
+@import "../common-styles/colors.css";
+@import "../common-styles/fonts.css";
+@import "../common-styles/common.css";
+
+.btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 3px;
+}
+.btn,
+.a,
+.arrow-upward,
+.edit {
+  color: var(--white-color);
+  cursor: pointer;
+}
+.btn-default {
+  background-color: var(--black-color);
+}
+.btn-success {
+  background-color: var(--success-color);
+}
+.btn-primary,
+.arrow-upward {
+  background-color: var(--info-color);
+}
+.btn-error,
+.edit {
+  background-color: var(--danger-color);
+}
+.a {
+  text-decoration: none;
+}
+.float-btn {
+  border-radius: 50%;
+  padding: 1rem;
+}
