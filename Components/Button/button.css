@@ -1,7 +1,3 @@
-@import "../common-styles/colors.css";
-@import "../common-styles/fonts.css";
-@import "../common-styles/common.css";
-
 .btn {
   border: none;
   padding: 0.5rem 1rem;
@@ -10,7 +6,6 @@
   border-radius: 3px;
 }
 .btn,
-.a,
 .arrow-upward,
 .edit {
   color: var(--white-color);
@@ -30,10 +25,11 @@
 .edit {
   background-color: var(--danger-color);
 }
-.a {
+.link {
   text-decoration: none;
+  color:inherit;
 }
 .float-btn {
   border-radius: 50%;
-  padding: 1rem;
+  padding: 0.5rem;
 }
