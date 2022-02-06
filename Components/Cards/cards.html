@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cards</title>
     <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="../common-styles/colors.css">
+    <link rel="stylesheet" href="../common-styles/common.css">
+    <link rel="stylesheet" href="../common-styles/fonts.css">
+    <link rel="stylesheet" href="../Button/button.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -16,10 +20,10 @@
 
     <div class="container flex">
         <div class="card card-width">
-            <div class="badge hidden">New</div>
+            <div class="card-badge hidden">New</div>
             <img class="img img-border img-dimensions hidden" src="https://media.istockphoto.com/photos/across-the-universe-traveling-in-space-time-travel-scene-of-the-in-picture-id664390112?b=1&k=20&m=664390112&s=170667a&w=0&h=HsHhmJvOKWHhiJLBgqAA7VM_6PFLCirnRLUIUmIBci4=" />
             <div class="p-1">
-                <h3>Text only card</h2>
+                <h3>Text only card</h3>
                 <p class="pt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus dolorem suscipit eos quod magnam eligendi esse enim recusandae rerum rem laudantium distinctio aliquam molestiae consequatur minus repellendus molestias, adipisci quam!
                 </p>
                 <span class="material-icons span hidden">cancel</span>
@@ -50,10 +54,10 @@
 
     <div class="container flex">
         <div class="card card-width">
-            <div class="badge hidden">New</div>
+            <div class="card-badge hidden">New</div>
             <img class="hidden" src="https://media.istockphoto.com/photos/across-the-universe-traveling-in-space-time-travel-scene-of-the-in-picture-id664390112?b=1&k=20&m=664390112&s=170667a&w=0&h=HsHhmJvOKWHhiJLBgqAA7VM_6PFLCirnRLUIUmIBci4=" />
             <div class="p-1 flex space-between">
-                <h3>Card with Dismiss</h2>
+                <h3>Card with Dismiss</h3>
                 <p class="hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus dolorem suscipit eos quod magnam eligendi esse enim recusandae rerum rem laudantium distinctio aliquam molestiae consequatur minus repellendus molestias, adipisci quam!
                 </p>
                 <span class="material-icons">cancel</span>
@@ -84,10 +88,10 @@
 
     <div class="container flex">
         <div class="card card-width">
-            <div class="badge">New</div>
+            <div class="card-badge">New</div>
             <img class="img img-border img-dimensions" src="https://media.istockphoto.com/photos/across-the-universe-traveling-in-space-time-travel-scene-of-the-in-picture-id664390112?b=1&k=20&m=664390112&s=170667a&w=0&h=HsHhmJvOKWHhiJLBgqAA7VM_6PFLCirnRLUIUmIBci4=" />
             <div class="p-1">
-                <h3>Card with Badge</h2>
+                <h3>Card with card-badge</h3>
                 <p class="pt-1">Visit ten places on our planet that are undergoing the biggest changes
                 today.</p>
                 <span class="material-icons span hidden">cancel</span>
@@ -118,13 +122,13 @@
 
     <div class="container flex">
         <div class="card card-width">
-            <div class="badge hidden">New</div>
+            <div class="card-badge hidden">New</div>
             <img class="hidden" src="https://media.istockphoto.com/photos/across-the-universe-traveling-in-space-time-travel-scene-of-the-in-picture-id664390112?b=1&k=20&m=664390112&s=170667a&w=0&h=HsHhmJvOKWHhiJLBgqAA7VM_6PFLCirnRLUIUmIBci4=" />
             <div class="img-overlay">
                 <img class="img img-dimensions" src="https://media.istockphoto.com/photos/across-the-universe-traveling-in-space-time-travel-scene-of-the-in-picture-id664390112?b=1&k=20&m=664390112&s=170667a&w=0&h=HsHhmJvOKWHhiJLBgqAA7VM_6PFLCirnRLUIUmIBci4=" />
-                <div class="overlay-text">
+                <div class="text-overlay">
                     <div class="p-1">
-                        <h3>Card with text overlay</h2>
+                        <h3>Card with text overlay</h3>
                         <p>by Rohit</p>
                         <span class="material-icons span hidden">cancel</span>
                     </div>
@@ -152,40 +156,39 @@
         </div>
     </div>
 
-    <!-- Horizontal Image and Text -->
+    <!-- Horizontal Card with shadow -->
     <div class="container flex">
-        <div class="card horizontal-card ">
-            <div class="flex no-wrap">
-                <img class="img img-border horizontal-img align-self-stretch" src="https://media.istockphoto.com/photos/across-the-universe-traveling-in-space-time-travel-scene-of-the-in-picture-id664390112?b=1&k=20&m=664390112&s=170667a&w=0&h=HsHhmJvOKWHhiJLBgqAA7VM_6PFLCirnRLUIUmIBci4=" />
-                <div class="flex flex-column">
-                    <div class="pt-1">
-                        <h3 class="font-weight">Horizontal Card</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quas rem harum quos cumque</p>
-                    </div>
-                    <br>
-                </div> 
-            </div>
-            
-            <img class="img-dimensions hidden" src="https://media.istockphoto.com/photos/across-the-universe-traveling-in-space-time-travel-scene-of-the-in-picture-id664390112?b=1&k=20&m=664390112&s=170667a&w=0&h=HsHhmJvOKWHhiJLBgqAA7VM_6PFLCirnRLUIUmIBci4=" />
-            <div class="px-1">
-                <p class="pt-1 hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, sed! </p>
-            </div>
+            <div class="card horizontal-card">
+              <div class="flex flex-start">
+                <img class="img img-border horizontal-img align-self-stretch"
+                  src="https://media.istockphoto.com/photos/across-the-universe-traveling-in-space-time-travel-scene-of-the-in-picture-id664390112?b=1&k=20&m=664390112&s=170667a&w=0&h=HsHhmJvOKWHhiJLBgqAA7VM_6PFLCirnRLUIUmIBci4=" />
+                <div class="horizontal-card-text flex align-start flex-column p-1">
+                    <h3>Horizontal Card</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
 
-            <div class="hidden">
+              <img class="img-dimensions hidden"
+                src="https://media.istockphoto.com/photos/across-the-universe-traveling-in-space-time-travel-scene-of-the-in-picture-id664390112?b=1&k=20&m=664390112&s=170667a&w=0&h=HsHhmJvOKWHhiJLBgqAA7VM_6PFLCirnRLUIUmIBci4=" />
+              <div class="px-1">
+                <p class="pt-1 hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, sed! </p>
+              </div>
+
+              <div class="hidden">
                 <button class="read btn btn-error">Read</button>
                 <button class="bookmark btn btn-primary">Bookmark</button>
                 <span class="material-icons">
-                    favorite_border
+                  favorite_border
                 </span>
                 <span class="material-icons ">
-                    share
+                  share
                 </span>
                 <span class="material-icons">
-                    more_vert
+                  more_vert
                 </span>
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
 </body>
 
 </html>
