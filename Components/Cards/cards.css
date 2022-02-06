@@ -1,8 +1,3 @@
-@import "../common-styles/colors.css";
-@import "../common-styles/common.css";
-@import "../common-styles/fonts.css";
-@import "../Button/button.css";
-
 .card {
   position: relative;
   margin: 2rem auto;
@@ -11,7 +6,13 @@
   cursor: pointer;
 }
 .horizontal-card {
-  width: 40rem;
+  width: 100%;
+}
+.horizontal-card-text{
+  width:70%;
+}
+.horizontal-img {
+  width: 20%;
 }
 .card-width {
   width: 90%;
@@ -23,7 +24,7 @@
 .img-overlay {
   position: relative;
 }
-.overlay-text {
+.text-overlay {
   position: absolute;
   bottom: 0.5rem;
   color: var(--white-color);
@@ -31,7 +32,7 @@
 .align-self-stretch {
   align-self: stretch;
 }
-.badge {
+.card-badge {
   position: absolute;
   top: 1rem;
   background-color: var(--danger-color);
@@ -50,9 +51,7 @@
   width: 100%;
   height: 12rem;
 }
-.horizontal-img {
-  width: 9rem;
-}
+
 .hidden {
   display: none;
 }
@@ -70,10 +69,4 @@
 }
 .pt-1 {
   padding-top: 1rem;
-}
-
-@media screen and (max-width: 530px) {
-  html {
-    font-size: 60%;
-  }
 }
