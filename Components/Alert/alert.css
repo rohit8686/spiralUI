@@ -1,7 +1,11 @@
-@import "../common-styles/colors.css";
-@import "../common-styles/fonts.css";
-@import "../common-styles/common.css";
-
+.alert{
+  width: 80%;
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
 .info {
   background-color: var(--info-color);
   color: var(--white-color);
@@ -16,5 +20,13 @@
 }
 .warning {
   background-color: var(--warning-color);
+  color: var(--white-color);
+}
+.white{
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+.black{
+  background-color: var(--black-color);
   color: var(--white-color);
 }

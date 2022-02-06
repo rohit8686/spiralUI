@@ -1,11 +1,6 @@
-@import "../common-styles/colors.css";
-@import "../common-styles/fonts.css";
-@import "../Avatar/avatar.css";
-
 .badge {
   position: relative;
 }
-
 .status {
   width: 1rem;
   height: 1rem;
@@ -28,7 +23,6 @@
 .busy {
   background-color: var(--danger-color);
 }
-
 .span.icon {
   font-size: 3rem;
 }

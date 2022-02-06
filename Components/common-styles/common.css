@@ -17,25 +17,6 @@
   --lg: 4rem;
 }
 
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 3rem;
-}
-h3 {
-  font-size: 2rem;
-}
-h4 {
-  font-size: 1.25rem;
-}
-h5 {
-  font-size: 1.2rem;
-}
-h6 {
-  font-size: 1em;
-}
-
 /* General Styles */
 
 .container {
@@ -45,7 +26,6 @@ h6 {
   padding: 1rem;
   box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  background-color: var(--light-grey);
 }
 .flex {
   display: flex;
@@ -71,4 +51,13 @@ h6 {
 }
 .space-around {
   justify-content: space-around;
+}
+.align-start{
+  align-items: flex-start;
+}
+.align-end{
+  align-items: flex-end;
+}
+.align-center{
+  align-items:center;
 }
