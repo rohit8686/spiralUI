@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="../common-styles/colors.css">
+    <link rel="stylesheet" href="../common-styles/common.css">
+    <link rel="stylesheet" href="../common-styles/fonts.css">
+
     <title>Input</title>
   </head>
   <body>
@@ -16,7 +20,6 @@
           type="text"
           placeholder="Enter Username"
           class="input"
-          size="80"
           required
         />
       </div>
@@ -26,11 +29,10 @@
           type="password"
           placeholder="Enter Password"
           class="input incorrect-password"
-          size="80"
           required
         />
-        <div class="error-msg incorrect">
-          <p>Incorrect password. Please try again.</p>
+        <div class="incorrect">
+          <p>Incorrect password.</p>
         </div>
       </div>
     </form>
