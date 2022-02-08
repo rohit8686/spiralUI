@@ -66,6 +66,8 @@
         <li class="list"><a href="#card" class="link aside-link">Card</a></li>
         <li class="list"><a href="#text-utilities" class="link aside-link">Text Utilities</a></li>
         <li class="list"><a href="#lists" class="link aside-link">Lists</a></li>
+        <li class="list"><a href="#modal" class="link aside-link">Modal</a></li>
+        <li class="list"><a href="#navigation" class="link aside-link">Navigation</a></li>
       </ul>
     </aside>
 
@@ -1205,7 +1207,7 @@
             </li>
           </ul>
         </div>
-        <pre>
+          <pre>
             <code class="language-html container">
               &lt;ul&gt;
                 &lt;li class=&quot;list&quot;&gt;
@@ -1230,6 +1232,123 @@
             </code>
           </pre>
 
+          <hr class="hr">
+
+          <!-- Modal -->
+          <div id="modal">
+            <h1 class="text-center">Modal</h1>
+            <br>
+            <p class="para">Modals are positioned over everything else in the document and remove scroll from the page. It gets closed only with close button on modal pop-up.</p>
+            <br>
+            <p class="para">Modal can be created using classes <strong>modal-bg, modal.</strong></p>
+            <div class="container">
+              <div class="flex">
+                <button class="btn open-modal btn-error">Open Modal</button>
+              </div>
+              <div class="modal-bg modal-hidden flex">
+                <div class="modal">
+                  <div class="flex space-between">
+                    <h2>Modal Heading</h2>
+                    <span class="material-icons modal-close">close</span>
+                  </div>
+                  <br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus accusantium fuga a totam eligendi soluta aliquam magni.</p>
+                  <br>
+                  <div class="flex flex-end">
+                    <button class="btn btn-primary">Action 1</button>
+                    <button class="btn btn-error">Action 2</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+
+          <pre>
+            <code class="language-html container">
+              &lt;div class=&quot;flex&quot;&gt;
+                &lt;button class=&quot;btn open-modal btn-error&quot;&gt;Open Modal&lt;/button&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;modal-bg modal-hidden flex&quot;&gt;
+                &lt;div class=&quot;modal&quot;&gt;
+                    &lt;div class=&quot;flex space-between&quot;&gt;
+                      &lt;h2&gt;Modal Heading&lt;/h2&gt;
+                      &lt;span class=&quot;material-icons modal-close&quot;&gt;close&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;br&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quis natus accusantium fuga a totam eligendi soluta aliquam magni.&lt;/p&gt;
+                    &lt;br&gt;
+                    &lt;div class=&quot;flex flex-end&quot;&gt;
+                      &lt;button class=&quot;btn btn-primary&quot;&gt;Action 1&lt;/button&gt;
+                      &lt;button class=&quot;btn btn-error&quot;&gt;Action 2&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h4 class="text-center">Javascript Code</h4>
+
+          <pre>
+            <code class="language-javascript container">
+              const modalButton = document.querySelector(".open-modal");
+              const modalBg = document.querySelector(".modal-bg");
+              const modalClose = document.querySelector(".modal-close");
+
+              function alertButtonHandler() {
+                modalBg.classList.remove("modal-hidden");
+                document.body.style.overflow = "hidden";
+              }
+              function modalCloseHandler() {
+                modalBg.classList.add("modal-hidden");
+                document.body.style.overflow = "visible";
+              }
+
+              modalButton.addEventListener("click", alertButtonHandler);
+              modalClose.addEventListener("click", modalCloseHandler);
+            </code>
+          </pre>
+        </div>  
+        <hr class="hr">
+
+        <!-- Navigation -->
+        <h1 class="text-center">Navigation</h1>
+        <br>
+        <p class="para">A navigation bar is a user interface element within a webpage that contains links to other sections of the website.</p>
+        
+        <div id="navigation">
+          <header class="container bg">
+            <nav class="flex space-between">
+              <div class="flex">
+                <span class="material-icons icon"> menu </span>
+                <h1>Navigation</h1>
+              </div>
+              <div class=" flex">
+                <span class="material-icons icon"> shopping_cart </span>
+                <span class="material-icons icon"> favorite </span>
+                <span class="material-icons icon"> person </span>
+              </div>
+            </nav>
+          </header>
+        </div>
+
+        <pre>
+          <code class="language-html container">
+            &lt;header class=&quot;container bg&quot;&gt;
+              &lt;nav class=&quot;flex space-between&quot;&gt;
+                  &lt;div class=&quot;flex&quot;&gt;
+                    &lt;span class=&quot;material-icons icon&quot;&gt; menu &lt;/span&gt;
+                    &lt;h1&gt;Navigation&lt;/h1&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot; flex&quot;&gt;
+                    &lt;span class=&quot;material-icons icon&quot;&gt; shopping_cart &lt;/span&gt;
+                    &lt;span class=&quot;material-icons icon&quot;&gt; favorite &lt;/span&gt;
+                    &lt;span class=&quot;material-icons icon&quot;&gt; person &lt;/span&gt;
+                  &lt;/div&gt;
+              &lt;/nav&gt;
+            &lt;/header&gt;
+          </code>
+        </pre>
     </div>
   </main>
 
@@ -1242,5 +1361,6 @@
   </div>
 
   <script src="index.js"></script>
+  <script src="/Components/Modal/modal.js"></script>
 </body>
 </html>
