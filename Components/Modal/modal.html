@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Components/Modal/modal.css" />
+    <link rel="stylesheet" href="/components.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Modal</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex">
+        <button class="btn open-modal btn-error">Open Modal</button>
+      </div>
+      <div class="modal-bg modal-hidden flex">
+        <div class="modal">
+          <div class="flex space-between">
+            <h2>Modal Heading</h2>
+            <span class="material-icons modal-close">close</span>
+          </div>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus
+            accusantium fuga a totam eligendi soluta aliquam magni.
+          </p>
+          <br />
+          <div class="flex flex-end">
+            <button class="btn btn-primary">Action 1</button>
+            <button class="btn btn-error">Action 2</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/Components/Modal/modal.js"></script>
+  </body>
+</html>

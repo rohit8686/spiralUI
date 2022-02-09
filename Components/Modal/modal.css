@@ -1,0 +1,27 @@
+.modal-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal {
+  width: 50%;
+  background-color: var(--white-color);
+  border-radius: 4px;
+  padding: 1rem;
+}
+.modal-hidden {
+  display: none;
+}
+.modal-close {
+  cursor: pointer;
+}
+@media screen and (max-width:600px) {
+  .modal{
+    width:70%;
+  }
+}
+
+

@@ -9,4 +9,6 @@
 @import "/Components/Image/image.css";
 @import "/Components/Input/input.css";
 @import "/Components/TextUtilities/textutilities.css";
-@import "/Components/Lists/list.css"
+@import "/Components/Lists/list.css";
+@import "/Components/Modal/modal.css";
+@import "/Components/Navigation/navigation.css";
