@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Components/Snackbar/snackbar.css" />
+    <link rel="stylesheet" href="/components.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Snackbar</title>
+  </head>
+  <body>
+    <div class="flex pt-1">
+      <button class="baseline btn btn-primary">Baseline</button>
+      <button class="leading btn btn-error">Leading</button>
+      <button class="stacked btn btn-success">Stacked</button>
+    </div>
+
+    <!-- Baseline -->
+
+    <div class="snackbar snackbar-baseline flex baseline-hidden">
+      <h4 class="">Can't send photo. Retry in 5 secs.</h4>
+      <div class="flex">
+        <button class="btn btn-error">Retry</button>
+        <span class="material-icons snackbar-close"> close </span>
+      </div>
+    </div>
+
+    <!-- Leading -->
+
+    <div class="snackbar snackbar-leading flex leading-hidden">
+      <h4 class="snackbar-text">Your photo has been archived.</h4>
+      <div class="flex">
+        <button class="btn btn-error">Undo</button>
+        <span class="material-icons snackbar-close"> close </span>
+      </div>
+    </div>
+
+    <!-- Stacked -->
+
+    <div class="snackbar snackbar-stacked stacked-hidden">
+      <h4 class="snackbar-text">
+        This item already has a label . You can add a new label.
+      </h4>
+      <div class="flex flex-end pt-1">
+        <button class="btn btn-error">Add a new label</button>
+        <span class="material-icons snackbar-close"> close </span>
+      </div>
+    </div>
+    <script src="/Components/Snackbar/snackbar.js"></script>
+  </body>
+</html>
