@@ -1,0 +1,15 @@
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+  background-color: lightgrey;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--danger-color);
+  cursor: pointer;
+}

@@ -1,0 +1,45 @@
+.drawer {
+  width: 100%;
+  height: 80vh;
+  border: 2px solid var(--black-color);
+  overflow: hidden;
+}
+.drawer-content {
+  height: 80vh;
+  overflow-y: auto;
+}
+.aside-nav {
+  width: 200px;
+  height: 80vh;
+  overflow-y: auto;
+}
+.drawer-nav, .nav-link:hover {
+  background-color: var(--info-color);
+  color: var(--white-color);
+}
+.nav-link {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.menu-icon {
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+.no-gap {
+  gap: 0;
+}
+hr {
+  margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+  .aside-nav {
+    width: max-content;
+  }
+}
