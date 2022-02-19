@@ -6,7 +6,6 @@ const snackbarLeading = document.querySelector(".snackbar-leading");
 const snackbarStacked = document.querySelector(".snackbar-stacked");
 
 function baselineHandler() {
-  console.log("baseline");
   snackbarBaseline.classList.remove("baseline-hidden");
   setTimeout(() => snackbarBaseline.classList.add("baseline-hidden"), 5000);
   snackbarLeading.classList.add("leading-hidden");
@@ -15,7 +14,6 @@ function baselineHandler() {
 baseline.addEventListener("click", baselineHandler);
 
 function leadingHandler() {
-  console.log("leading");
   snackbarLeading.classList.remove("leading-hidden");
   setTimeout(() => snackbarLeading.classList.add("leading-hidden"), 5000);
   snackbarBaseline.classList.add("baseline-hidden");
@@ -24,7 +22,6 @@ function leadingHandler() {
 leading.addEventListener("click", leadingHandler);
 
 function stackedHandler() {
-  console.log("Stacked");
   snackbarStacked.classList.remove("stacked-hidden");
   setTimeout(() => snackbarStacked.classList.add("stacked-hidden"), 5000);
   snackbarBaseline.classList.add("baseline-hidden");
