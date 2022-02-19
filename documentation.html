@@ -70,6 +70,9 @@
         <li class="list"><a href="#navigation" class="link aside-link">Navigation</a></li>
         <li class="list"><a href="#snackbar" class="link aside-link">Snackbar</a></li>
         <li class="list"><a href="#rating" class="link aside-link">Rating</a></li>
+        <li class="list"><a href="#slider" class="link aside-link">Slider</a></li>
+        <li class="list"><a href="#grid" class="link aside-link">Grid</a></li>
+        <li class="list"><a href="#drawer" class="link aside-link">Drawer</a></li>
       </ul>
     </aside>
 
@@ -1473,6 +1476,301 @@
           </code>
         </pre>
       </div>
+      <hr class="hr">
+      
+      <!-- Slider -->
+      <div id="slider">
+        <h1 class="text-center">Slider</h1>
+        <p class="para pt-1">Sliders are used to decide range for something like sound in videos, price in shopping sites, etc</p>
+        <p class="para pt-1">To create slider use the class <strong>slider</strong></p>
+        <div class="container text-center">
+          <span>0</span>
+          <input
+            type="range"
+            name="slider"
+            id="slider"
+            min="0"
+            max="100"
+            class="slider"
+          />
+          <span>100</span>
+        </div>
+
+        <pre>
+          <code class="language-html container">
+            &lt;div class=&quot;container text-center&quot;&gt;
+              &lt;span&gt;0&lt;/span&gt;
+              &lt;input
+                  type=&quot;range&quot;
+                  name=&quot;slider&quot;
+                  id=&quot;slider&quot;
+                  min=&quot;0&quot;
+                  max=&quot;100&quot;
+                  class=&quot;slider&quot;
+              /&gt;
+              &lt;span&gt;100&lt;/span&gt;
+            &lt;/div&gt;
+          </code> 
+        </pre>
+      </div>
+
+      <hr class="hr">
+
+      <div id="grid">
+        <h1 class="text-center pb-1">Grid</h1>
+        <p class="para pt-1">Grid is a visual structure used to organize components of a webpage's design such as typography, images, video, and other elements</p>
+        <p class="para pt-1">To use these kind of responsive grids, use the class <strong>grid, grid-item</strong></p>
+        <h2 class="text-center pt-1">Two Items in Grid</h2>
+        <div class="container grid">
+          <div class="grid-item flex">Grid 1</div>
+          <div class="grid-item flex">Grid 2</div>
+        </div>
+
+        <pre>
+          <code class="language-html container">
+            &lt;div class=&quot;container grid&quot;&gt;
+              &lt;div class=&quot;grid-item flex&quot;&gt;Grid 1&lt;/div&gt;
+              &lt;div class=&quot;grid-item flex&quot;&gt;Grid 2&lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+
+        <h2 class="text-center pt-1">Three Items in Grid</h2>
+        <div class="container grid">
+          <div class="grid-item flex">Grid 1</div>
+          <div class="grid-item flex">Grid 2</div>
+          <div class="grid-item flex">Grid 3</div>
+        </div>
+
+        <pre>
+          <code class="language-html container">
+            &lt;div class=&quot;container grid&quot;&gt;
+              &lt;div class=&quot;grid-item flex&quot;&gt;Grid 1&lt;/div&gt;
+              &lt;div class=&quot;grid-item flex&quot;&gt;Grid 2&lt;/div&gt;
+              &lt;div class=&quot;grid-item flex&quot;&gt;Grid 3&lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+      </div>
+
+      <hr class="hr">
+
+      <div id="drawer">
+        <h1 class="text-center">Drawer</h1>
+        <p class="para pt-1">The side drawer, also known as the slide menu, navigation drawer, or the “Left nav”, is a UI panel that contains an site or mobile app's main navigation destinations. Usually hidden from view, the side drawer slides in from the left edge of the screen.</p>
+
+        <div class="container">
+          <div class="drawer flex no-wrap no-gap">
+            <aside>
+              <div class="aside-nav p-1">
+                <div>
+                  <h3>Mail</h3>
+                  <small>email@gmail.com</small>
+                </div>
+                <nav class="pt-1">
+                  <div class="flex flex-start nav-link">
+                    <span class="material-icons"> inbox </span>
+                    <p>Inbox</p>
+                  </div>
+                  <div class="flex flex-start nav-link">
+                    <span class="material-icons"> star </span>
+                    <p>Star</p>
+                  </div>
+                  <div class="flex flex-start nav-link">
+                    <span class="material-icons"> send </span>
+                    <p>Sent Mail</p>
+                  </div>
+                  <div class="flex flex-start nav-link">
+                    <span class="material-icons"> drafts </span>
+                    <p>Drafts</p>
+                  </div>
+                  <hr />
+                  <h1 class="pt-1">Lables</h1>
+                  <div class="flex flex-start nav-link">
+                    <span class="material-icons"> inbox </span>
+                    <p>Friends</p>
+                  </div>
+                  <div class="flex flex-start nav-link">
+                    <span class="material-icons"> star </span>
+                    <p>Family</p>
+                  </div>
+                  <div class="flex flex-start nav-link">
+                    <span class="material-icons"> send </span>
+                    <p>Work</p>
+                  </div>
+                  <div class="flex flex-start nav-link">
+                    <span class="material-icons"> drafts </span>
+                    <p>Drafts</p>
+                  </div>
+                  <hr />
+                  <div class="flex flex-start nav-link">
+                    <span class="material-icons"> inbox </span>
+                    <p>Inbox</p>
+                  </div>
+                  <div class="flex flex-start nav-link">
+                    <span class="material-icons"> star </span>
+                    <p>Star</p>
+                  </div>
+                  <div class="flex flex-start nav-link">
+                    <span class="material-icons"> send </span>
+                    <p>Sent Mail</p>
+                  </div>
+                  <div class="flex flex-start nav-link">
+                    <span class="material-icons"> drafts </span>
+                    <p>Drafts</p>
+                  </div>
+                </nav>
+              </div>
+            </aside>
+            <div class="drawer-content">
+              <header class="drawer-nav flex flex-start p-1">
+                <span class="material-icons menu-icon"> menu </span>
+                <h4>Dismissible Drawer</h4>
+              </header>
+              <div class="p-1">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati, corporis voluptas omnis amet consequuntur doloremque
+                  neque, provident magnam at doloribus recusandae, ipsum laudantium
+                  molestiae. Sit consequatur recusandae amet saepe cumque?
+                </p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+                  voluptates non facilis deleniti amet, debitis, magnam optio quos
+                  magni expedita excepturi porro nulla repellat. Id aperiam
+                  consectetur veritatis eaque corrupti!
+                </p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <pre>
+          <code class="language-html container">
+            &lt;div class=&quot;drawer flex no-wrap no-gap&quot;&gt;
+            &lt;aside&gt;
+              &lt;div class=&quot;aside-nav p-1&quot;&gt;
+                &lt;div&gt;
+                  &lt;h3&gt;Mail&lt;/h3&gt;
+                  &lt;small&gt;email@gmail.com&lt;/small&gt;
+                &lt;/div&gt;
+                &lt;nav class=&quot;pt-1&quot;&gt;
+                  &lt;div class=&quot;flex flex-start nav-link&quot;&gt;
+                    &lt;span class=&quot;material-icons&quot;&gt; inbox &lt;/span&gt;
+                    &lt;p&gt;Inbox&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;flex flex-start nav-link&quot;&gt;
+                    &lt;span class=&quot;material-icons&quot;&gt; star &lt;/span&gt;
+                    &lt;p&gt;Star&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;flex flex-start nav-link&quot;&gt;
+                    &lt;span class=&quot;material-icons&quot;&gt; send &lt;/span&gt;
+                    &lt;p&gt;Sent Mail&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;flex flex-start nav-link&quot;&gt;
+                    &lt;span class=&quot;material-icons&quot;&gt; drafts &lt;/span&gt;
+                    &lt;p&gt;Drafts&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;hr /&gt;
+                  &lt;h1 class=&quot;pt-1&quot;&gt;Lables&lt;/h1&gt;
+                  &lt;div class=&quot;flex flex-start nav-link&quot;&gt;
+                    &lt;span class=&quot;material-icons&quot;&gt; inbox &lt;/span&gt;
+                    &lt;p&gt;Friends&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;flex flex-start nav-link&quot;&gt;
+                    &lt;span class=&quot;material-icons&quot;&gt; star &lt;/span&gt;
+                    &lt;p&gt;Family&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;flex flex-start nav-link&quot;&gt;
+                    &lt;span class=&quot;material-icons&quot;&gt; send &lt;/span&gt;
+                    &lt;p&gt;Work&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;flex flex-start nav-link&quot;&gt;
+                    &lt;span class=&quot;material-icons&quot;&gt; drafts &lt;/span&gt;
+                    &lt;p&gt;Drafts&lt;/p&gt;
+                  &lt;/div&gt; 
+                &lt;/nav&gt;
+              &lt;/div&gt;
+            &lt;/aside&gt;
+            &lt;div class=&quot;drawer-content&quot;&gt;
+              &lt;header class=&quot;drawer-nav flex flex-start p-1&quot;&gt;
+                &lt;span class=&quot;material-icons menu-icon&quot;&gt; menu &lt;/span&gt;
+                &lt;h4&gt;Dismissible Drawer&lt;/h4&gt;
+              &lt;/header&gt;
+              &lt;div class=&quot;p-1&quot;&gt;
+                &lt;p&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit......
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+        <h3 class="text-center">Javascript Code</h3>
+        <pre>
+          <code class="language-javascript container">
+            const menu = document.querySelector(".menu-icon");
+            const asideNav = document.querySelector(".aside-nav");
+
+            function menuHandler() {
+              asideNav.classList.toggle("hide");
+            }
+
+            menu.addEventListener("click", menuHandler);
+          </code>
+        </pre>
+      </div>
     </div>
   
     <div class="back-to-top">
@@ -1486,5 +1784,6 @@
   <script src="index.js"></script>
   <script src="/Components/Modal/modal.js"></script>
   <script src="/Components/Snackbar/snackbar.js"></script>
+  <script src="/Components/Drawer/drawer.js"></script>
 </body>
 </html>

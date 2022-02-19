@@ -1,0 +1,13 @@
+.grid-item {
+  width: 100px;
+  height: 100px;
+  background-color: var(--info-color);
+  color: var(--white-color);
+  border-radius: 3px;
+}
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
